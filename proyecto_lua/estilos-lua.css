@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F7E8; 
+    color: #7D7D7D; 
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+h1, .logo {
+    font-family: 'Playfair Display', serif;
+    color: #7BAE50; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7D7D7D;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7BAE50;
+}
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.btn-primary {
+    background-color: #7BAE50;
+    color: #F9F7E8;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6a9645;
+    transform: scale(1.05);
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 10%;
+    background-color: #ffff; 
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-item p {
+    font-weight: 300;
+    color: #999;
+}
+.gallery {
+    width: 100%; 
+    clear: both; 
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 90%; 
+}
+
+.photo-card {
+    flex: 1;
+    max-width: 350px;
+    height: 450px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-card:hover img {
+    transform: scale(1.1); 
+}
+
+.photo-card span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(123, 174, 80, 0.8); 
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+.nova-footer {
+    padding: 60px 0 30px;
+    text-align: center;
+    background-color: #F9F7E8; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-line {
+    width: 50px;
+    height: 1px;
+    background-color: #7BAE50; 
+    margin: 0 auto 20px;
+}
+
+.nova-footer p {
+    font-size: 0.9rem;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+.studio-tag {
+    margin-top: 10px;
+    font-size: 0.8rem !important;
+}
+
+.studio-tag span {
+    color: #7BAE50;
+    font-weight: bold;
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05); 
+}
+
+
+.hero-logo {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 20px;
+    mix-blend-mode: multiply; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 40px 0;
+    width: 100%;
+}
+
+.logo-container {
+    margin-bottom: 20px; 
+}
+
+.main-logo {
+    max-width: 250px; 
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: underline;
+    color: #51d445;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7BAE50;
+}
+.testimonials {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #FFFFFF; /* Un fondo blanco para contrastar con el crema */
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color:#6a9645;
+    text-decoration: underline;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para que en celular se acomoden solas */
+}
+
+.testimonial-card {
+    background-color: #F9F7E8; /* El crema de tu logo */
+    padding: 40px 30px;
+    border-radius: 20px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02); /* Sombra casi invisible */
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(123, 174, 80, 0.1); /* Sombra con el verde de Lúa */
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.client-name {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #7BAE50; /* Tu verde oliva */
+    letter-spacing: 1px;
+}
+/* Contenedor para alinear texto y logo de lado a lado */
+.brand-inline {
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo con el texto */
+    justify-content: center; /* Los mantiene al centro del footer */
+    gap: 10px; /* Espacio entre el nombre y el logo */
+}
+
+.footer-logo {
+    height: 60px; /* Tamaño pequeño para que no compita con el nombre */
+    width: auto;
+    opacity: 0.9; /* Un toque de transparencia para que sea sutil */
+    transition: 0.3s;
+}
+
+/* Efecto opcional: que el logo brille un poco al pasar el mouse */
+.footer-logo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nova-signature h4 {
+    margin: 0; /* Quitamos márgenes para que no se mueva el logo */
+}
